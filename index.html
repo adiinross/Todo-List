@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do List</title>
     <script type="text/javascript" src="program.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;900&family=Poppins&family=Rubik:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>To do List</h1>
+    <h1>Todo List</h1>
     <div>
         <h2>What you have to do?</h2>
     </div>
 
-    <div>
-        <input type="text" id="todo">
-        <button onclick=addtodo()>Add Todo</button>
+    <div class="todo-inputfield">
+        <input type="text" id="todo" placeholder="Type your todo" required>
+        <button onclick="addtodo();">Add Todo</button>
     </div>
 
     <table id="table">
